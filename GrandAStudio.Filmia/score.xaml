@@ -1,0 +1,89 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="GrandAStudio.Sportia.score"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="clr-namespace:GrandAStudio.Sportia" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+   d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" BackKeyPress="PhoneApplicationPage_BackKeyPress">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="319*" />
+            <RowDefinition Height="449*" />
+            <RowDefinition Height="0*" />
+        </Grid.RowDefinitions>
+        <!--Pivot Control-->
+    
+            <!--Pivot item one-->
+           
+
+            <!--Pivot item two-->
+          
+               
+                <Grid Grid.RowSpan="2">
+                    <Grid.Background >
+                        <ImageBrush ImageSource=" Images/results screen background.png"></ImageBrush>
+                    </Grid.Background>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="160" />
+                        <RowDefinition Height="292" />
+                        <RowDefinition Height="316*" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Column="1"  HorizontalAlignment="Left" Margin="0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Source="Images/Sportia.png" Width="Auto" />
+                    <Image Grid.Row="1" HorizontalAlignment="Left" Margin="20,70,0,0" Name="image2" Stretch="None" VerticalAlignment="Top" Source="/GrandAStudio.Sportia;component/Images/trophy.png" />
+            <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="203,96,0,116" Name="txtScore" Text="{Binding CurrentScore}" Width="100" Foreground="Black" FontWeight="ExtraBold" FontSize="56" TextAlignment="Center" />
+            <Image Grid.Row="2" Height="266" HorizontalAlignment="Left" Margin="0,49,0,0" Name="image3" Stretch="Fill" VerticalAlignment="Top" Width="480" Source="/GrandAStudio.Sportia;component/Images/score%20bg.png" />
+            <TextBlock Grid.Row="2" Height="30" HorizontalAlignment="Left" Margin="75,101,0,0" Name="lblTotal" Text="Career Points" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="77,153,0,0" Name="lblWrongAnswer" Text="Wrong Answers" VerticalAlignment="Top" Grid.Row="2" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="75,127,0,0" Name="lblRAnswer" Text="Correct Answers" VerticalAlignment="Top" Grid.Row="2" FontWeight="Bold" />
+            <TextBlock Foreground="Black" HorizontalAlignment="Left" Margin="293,101,0,185" Name="textBlock1" Text="Total Games" Grid.Row="2" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="107,191,0,0" Name="textBlock2" Text="You Have Unlocked a New Category." VerticalAlignment="Top" Grid.Row="2" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="293,127,0,0" Name="textBlock3" Text="Total Passes" VerticalAlignment="Top" Grid.Row="2" FontWeight="Bold" />
+            <HyperlinkButton BorderBrush="{x:Null}" Height="72" Margin="270,230,115,0" Name="btnFacebook" NavigateUri="Http://www.facebook.com/Ganda.Studios" TargetName="_blank" VerticalAlignment="Top" Grid.Row="2">
+                <HyperlinkButton.Background>
+                    <ImageBrush ImageSource="/GrandAStudio.Sportia;component/Images/FaceBook_128x128.png" />
+                </HyperlinkButton.Background>
+            </HyperlinkButton>
+            <HyperlinkButton BorderBrush="{x:Null}" Height="72" HorizontalAlignment="Right" Margin="0,230,20,0" Name="btnTwitter" NavigateUri="Http://twitter.com/Ganda_Studios" TargetName="_blank" VerticalAlignment="Top" Width="84" Grid.Row="2">
+                <HyperlinkButton.Background>
+                    <ImageBrush ImageSource="/GrandAStudio.Sportia;component/Images/twitter_newbird_blue2.png" Stretch="UniformToFill" />
+                </HyperlinkButton.Background>
+            </HyperlinkButton>
+            <TextBlock Foreground="Black" HorizontalAlignment="Left" Margin="14,101,0,185" Name="txtTotal" Text="{Binding Path= GScore.Total }" Grid.Row="2" Width="57" TextAlignment="Right" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="14,153,0,0" Name="txtWA"  Text="{Binding Path= GScore.TotlaWrongAnswers }" VerticalAlignment="Top" Grid.Row="2" Width="57" TextAlignment="Right" FontWeight="Bold" />
+            <TextBlock Foreground="Black" HorizontalAlignment="Left" Margin="14,127,0,159" Name="txtCA"  Text="{Binding Path= GScore.TotalRightAnswers }" Grid.Row="2" Width="57" TextAlignment="Right" FontWeight="Bold" />
+            <TextBlock Foreground="Black" HorizontalAlignment="Left" Margin="215,101,0,185" Name="txtTG"  Text="{Binding Path= GScore.TotalGames }" Grid.Row="2" Width="67" TextAlignment="Right" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="215,127,0,0" Name="txtPasses" Text="{Binding Path= GScore.TotalPasses }" VerticalAlignment="Top" Grid.Row="2" Width="67" TextAlignment="Right" FontWeight="Bold" />
+            <TextBlock FontSize="56" FontWeight="ExtraBold" Foreground="Black" Height="80" HorizontalAlignment="Left" Margin="297,96,0,0" Name="textBlock5" Text="Points" VerticalAlignment="Top" Width="200" Grid.Row="1" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="271,222,0,0" Name="textBlock6" Text="Wrong Answers" VerticalAlignment="Top" Grid.Row="1" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="271,184,0,0" Name="textBlock7" Text="Correct Answers" VerticalAlignment="Top" Grid.Row="1" FontWeight="Bold" />
+            <TextBlock Foreground="Black" Height="30" HorizontalAlignment="Left" Margin="203,0,0,40" Name="textBlock8" Text="{Binding Path=GameWrongAnswer}" VerticalAlignment="Bottom" Width="57" Grid.Row="1" TextAlignment="Right" FontWeight="Bold" />
+            <TextBlock Foreground="Black" HorizontalAlignment="Left" Margin="203,184,0,78" Name="textBlock9" Text="{Binding Path=GameRightAnswer}" Width="57" Grid.Row="1" FlowDirection="LeftToRight" TextAlignment="Right" FontWeight="Bold" />
+        </Grid>
+          
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="appbar_button1" IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton x:Name="appbar_button2" IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="menuItem1" Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem x:Name="menuItem2" Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+    
+</phone:PhoneApplicationPage>

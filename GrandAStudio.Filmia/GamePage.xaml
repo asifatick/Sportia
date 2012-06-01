@@ -1,0 +1,121 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="GrandAStudio.Sportia.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+     xmlns:local="clr-namespace:GrandAStudio.Sportia" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False" xmlns:my="clr-namespace:System;assembly=mscorlib" BackKeyPress="PhoneApplicationPage_BackKeyPress">
+    <phone:PhoneApplicationPage.Resources>
+        <my:Double x:Key="Height1">NaN</my:Double>
+        <local:IdToImageConverter x:Key="IdImageConverter"/>
+
+        <DataTemplate x:Key="AnswerListBoxItemTemplate" >
+
+            <Grid HorizontalAlignment="Stretch" Width="Auto"  >
+                <Grid.ColumnDefinitions>
+                    <!--<ColumnDefinition Width="100" />-->
+                    <ColumnDefinition Width="*" />
+                    <!--<ColumnDefinition Width="Auto" />-->
+                    <!--<ColumnDefinition Width="100" />-->
+                </Grid.ColumnDefinitions>
+                <Button  Margin="10,0, 0, 0"
+                    x:Name="answerButton"
+                    BorderThickness="0"
+                    CommandParameter="{Binding answer}"
+                   Width="Auto"
+                    Click="answerButton_Click">
+                <Image 
+                   Margin="-20,0, 0, 0"
+                    Name="imgAnsBack"
+                    Source="Images\answer.png"
+                   
+                   
+                    Width="Auto"  />
+
+                </Button>
+                <!--<CheckBox 
+                    IsChecked="{Binding IsCorrect, Mode=OneTime}" 
+                    Grid.Column="0" VerticalAlignment="Top"/>-->
+
+                <TextBlock Margin="70,30, 0, 0"
+                    Text="{Binding answer}" 
+                    
+                   Foreground="Black" FontWeight="Bold" >
+                        
+                        </TextBlock>
+
+                <TextBlock Width="Auto"  Margin="0,0, 0, 0"  Height="40">
+
+                </TextBlock>
+
+                <!--<Button                                
+                    Grid.Column="3"
+                    x:Name="selectButton"
+                    BorderThickness="0"                                                                  
+                    Margin="0, -18, 0, 0"
+                    Click="deleteTaskButton_Click" >
+                </Button>-->
+                
+            </Grid>
+        </DataTemplate>
+
+
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images\background.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="172*" />
+            <ColumnDefinition Width="308*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*" />
+            <RowDefinition Height="88*" />
+            <!--<RowDefinition Height="160*" />-->           
+                
+           
+            <RowDefinition Height="600*" />
+            <RowDefinition Height="46*" />
+        </Grid.RowDefinitions>
+        <!--<Canvas FlowDirection= "LeftToRight" HorizontalAlignment="Left" Height="800" Width="460" Grid.RowSpan="3" Grid.ColumnSpan="2">
+            <Canvas.Background>
+                <ImageBrush ImageSource="Images\background.png"/>
+            </Canvas.Background>-->
+        
+        <TextBlock Text="{Binding CurrentScore}" Name="txtScore" TextWrapping="Wrap" Margin="20,15,0,18" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FF030000" Width="64" HorizontalAlignment="Left" FontWeight="Bold" FontSize="30" TextAlignment="Center" />
+        <TextBlock Text="{Binding Timer}" Name="txtTimeLeft" TextWrapping="Wrap" Grid.Row="1" Margin="20,0,0,46" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FF030000" Height="40" Width="64" HorizontalAlignment="Left" TextAlignment="Center" FontSize="30" FontWeight="Bold" />
+        <Image Height="160"  HorizontalAlignment="Left" Name="imgResultState" Stretch="Uniform" Source="test" Width="160"    Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"/>
+
+        <MediaElement x:Name="gamePlayer" AutoPlay="True" Visibility="Collapsed" MediaOpened="gamePlayer_MediaOpened" MediaEnded="SoundPlayer_MediaEnded" />
+
+
+
+
+        <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" FlowDirection="LeftToRight" VerticalAlignment="Top"  >
+            <TextBlock   Margin="20,20,0,0" Height="Auto" HorizontalAlignment="Left"  Name="textBlock1" Text="{Binding Path=CurrentQuestion.Question }" VerticalAlignment="Top" Width="400" TextWrapping="Wrap"   Style="{StaticResource PhoneTextNormalStyle}" Foreground="Black" FontWeight="ExtraBold" FontSize="30" />
+            <TextBlock Height="20" />
+            <ListBox  
+                     Name="lstAnswers" SelectionChanged="ListBox_SelectionChanged" 
+                     HorizontalAlignment="Left" VerticalAlignment="Top"
+                     ItemsSource="{Binding Path=CurrentQuestion.Answers}"
+                     ItemTemplate="{StaticResource AnswerListBoxItemTemplate }" Tap="ListBox_Tap_1" >
+            </ListBox>
+        </StackPanel>
+
+        <Image Grid.Column="1" Grid.Row="4" Name="imgSkip" Source=" Images\skip.png"  Tap="imgSkip_Tap" Height="50" Width="72"  Margin="236,0,0,-4" />
+        <!--</Canvas>-->
+    </Grid>
+   
+</phone:PhoneApplicationPage>

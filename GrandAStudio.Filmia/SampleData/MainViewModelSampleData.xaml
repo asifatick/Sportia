@@ -1,0 +1,27 @@
+﻿<local:MainViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:GrandAStudio.Sportia" 
+   
+    CurrentScore="10"
+    GameRightAnswer="3"
+    GameWrongAnswer="12">
+    
+    <local:MainViewModel.Items >
+        <local:Questions Question=" Test QQQQQQ qqqq QQQ ???" Answer1=" 1234" Answer2=" 32434" Answer3=" 343434" Answer4="sdfsdf"  >
+            
+            
+        </local:Questions>
+    </local:MainViewModel.Items>
+    <local:MainViewModel.CurrentQuestion >
+        
+        <local:Questions Question=" Test QQQQQQ qqqq QQQ ???" Answer1=" 1234" Answer2=" 32434" Answer3=" 343434" Answer4="sdfsdf"    >
+            
+        </local:Questions>
+    </local:MainViewModel.CurrentQuestion>
+    <local:MainViewModel.GScore>
+        
+        <local:Score Total="123" TotalGames="33" TotalPasses="12" TotalQuestions="12" TotalRightAnswers="12" TotlaWrongAnswers="12"></local:Score>
+    </local:MainViewModel.GScore>
+
+</local:MainViewModel>

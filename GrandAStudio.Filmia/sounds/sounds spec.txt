@@ -1,0 +1,15 @@
+Button Pressed - play this when an answer is selected or pass.
+
+categories - play this in the categories screen
+
+cheer - play this when the player scores 30 or more points
+
+gameplay - play this during the games itself
+
+menu - play this in the menu screen, options screen, unlock screen,stats screen.  The sound shouldn't replay when navigating through screens.  It should loop as long as the user is in one of the screens listed.  It should keep playing until the user presses the 'PLAY' button.
+
+score screen - play this during the score screen after a game is played.
+
+unlock - play in the unlock screen if a pass code is correctly inputted
+
+wrong answer - play this if a wrong answer is selected or timer runs out. 

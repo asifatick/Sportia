@@ -1,0 +1,60 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="GrandAStudio.Sportia.Codes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" >
+        <Grid.Background>
+            <ImageBrush ImageSource="Images\main screen.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+           
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+       
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="0" Margin="12,0,12,0" Loaded="ContentPanel_Loaded">
+            <Image Height="96" Source="Images\lockfinal.png" HorizontalAlignment="Left" Margin="187,24,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="95" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,159,0,0"
+                     Name="txtCode"  VerticalAlignment="Top" 
+                     Width="460" TextAlignment="Center"
+                     Text="{Binding CodeEntered, Mode=TwoWay}"  KeyUp="txtCode_KeyUp" />
+            <Image Source="Images\messagestripbg.png" Height="200"
+                   HorizontalAlignment="Left" Margin="0,378,0,0" 
+                   Name="imgMsgStrip" Stretch="Fill" VerticalAlignment="Top" 
+                   Width="460" Visibility="Collapsed"/>
+            <TextBlock Height="116" HorizontalAlignment="Left" 
+                       Margin="31,420,0,42" Name="lblMsg" 
+                        VerticalAlignment="Center" 
+                       Width="395" TextAlignment="Center" Visibility="Collapsed" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="20,339,0,0" Name="txtFake" Text="TextBox" VerticalAlignment="Top" Width="0" Visibility="Visible" />
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
