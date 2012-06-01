@@ -94,7 +94,10 @@ namespace GrandAStudio.Sportia
         {
             get
             {
-                return _currentSound.State;
+                if (_currentSound != null)
+                    return _currentSound.State;
+
+                return SoundState.Stopped;
             }
         }
         
