@@ -49,7 +49,7 @@ namespace GrandAStudio.Sportia {
                 return;
             }
             _contentLoaded = true;
-            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Filmia;component/MainPage.xaml", System.UriKind.Relative));
+            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Sportia;component/MainPage.xaml", System.UriKind.Relative));
             this.image1 = ((System.Windows.Controls.Image)(this.FindName("image1")));
         }
     }

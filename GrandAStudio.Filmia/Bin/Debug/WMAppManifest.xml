@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{b5021e9e-546a-41b7-b8e2-2d22d9a81fa1}" Title="Sportia" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="GrandAStudio.Sportia author" Description="Sample description" Publisher="GrandAStudio.Sportia">
+  <App xmlns="" ProductID="{1190ACE7-C01C-4E62-AF4B-5C4165BF1735}" Title="Sportia" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="GrandAStudio.Sportia author" Description="Sample description" Publisher="GrandAStudio.Sportia">
     <IconPath IsRelative="true" IsResource="false">icons\62.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />

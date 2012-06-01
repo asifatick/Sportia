@@ -53,7 +53,7 @@ namespace GrandAStudio.Sportia {
                 return;
             }
             _contentLoaded = true;
-            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Filmia;component/TipsPage.xaml", System.UriKind.Relative));
+            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Sportia;component/TipsPage.xaml", System.UriKind.Relative));
             this.LayoutRoot = ((System.Windows.Controls.Grid)(this.FindName("LayoutRoot")));
             this.textBlock1 = ((System.Windows.Controls.TextBlock)(this.FindName("textBlock1")));
             this.textBlock2 = ((System.Windows.Controls.TextBlock)(this.FindName("textBlock2")));

@@ -63,7 +63,7 @@ namespace GrandAStudio.Sportia {
                 return;
             }
             _contentLoaded = true;
-            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Filmia;component/MenuPage.xaml", System.UriKind.Relative));
+            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Sportia;component/MenuPage.xaml", System.UriKind.Relative));
             this.LayoutRoot = ((System.Windows.Controls.Grid)(this.FindName("LayoutRoot")));
             this.ContentPanel = ((System.Windows.Controls.Grid)(this.FindName("ContentPanel")));
             this.btnFacebook = ((System.Windows.Controls.HyperlinkButton)(this.FindName("btnFacebook")));

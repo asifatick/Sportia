@@ -13,7 +13,10 @@ E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\icons\200.png
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\icons\62.png
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\Moviadb1.sdf
+E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\GrandAStudio.Sportia.dll
+E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\GrandAStudio.Sportia.pdb
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\AppManifest.xaml
+E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\Sportia.xap
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\Microsoft.Phone.Controls.dll
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\Microsoft.Phone.Controls.xml
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\ResolveAssemblyReference.cache
@@ -27,10 +30,7 @@ E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\score.g.i.cs
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\StatsPage.g.i.cs
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\TipsPage.g.i.cs
-E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\XapCacheFile.xml
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\GrandAStudio.Sportia.g.resources
-E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\GrandAStudio.Sportia.dll
-E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\GrandAStudio.Sportia.pdb
-E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\Bin\Debug\Sportia.xap
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\GrandAStudio.Sportia.dll
 E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\GrandAStudio.Sportia.pdb
+E:\WorkingFolder\WinFone1.0\Sportia\GrandAStudio.Sportia\GrandAStudio.Filmia\obj\Debug\XapCacheFile.xml
