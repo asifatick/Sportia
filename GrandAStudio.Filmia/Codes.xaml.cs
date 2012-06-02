@@ -73,31 +73,31 @@ namespace GrandAStudio.Sportia
             bool IsValidCode = true;
             switch (code.ToUpper())
             {
-                case "GANDA": { unlockCategory(6); }
+                case "CHAMP": { unlockCategory(13); }
                      break;
-                case "LOCKS": { unlockCategory(13); }
+                case "MVP13": { unlockCategory(5); }
                      break;
-                case "BRAVE": { increaseScorePoint(25); }
+                case "PLAYS": { increaseScorePoint(25); }
                      break;
-                case "GOODF": { increaseScorePoint(25); }
+                case "BBALL": { increaseScorePoint(25); }
                      break;
-                case "ANGEL": { increaseScorePoint(25); }
+                case "FBALL": { increaseScorePoint(25); }
                      break;
-                case "ZZXXQ": { increaseScorePoint(25); }
+                case "KO2ND": { increaseScorePoint(25); }
                      break;
-                case "BTTFI": { increaseScorePoint(25); }
+                case "BOXER": { increaseScorePoint(25); }
                     break;
-                case "TOMBS": { increaseScorePoint(25); }
+                case "NASCA": { increaseScorePoint(25); }
                     break;
-                case "WESTC": { increaseScorePoint(25); }
+                case "RACER": { increaseScorePoint(25); }
                     break;
-                case "ORLAN": { increaseScorePoint(25); }
+                case "GGGGG": { increaseScorePoint(25); }
                
                     
                     break;
-                case "SCARF": { increaseScorePoint(50); }
+                case "AAAAA": { increaseScorePoint(25); }
                      break;
-                case "CASIN": { increaseScorePoint(50); }
+                case "HOMER": { increaseScorePoint(50); }
                      break;
                 default: { IsValidCode = false; }
                      break;

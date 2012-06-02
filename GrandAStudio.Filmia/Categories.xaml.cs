@@ -29,31 +29,31 @@ namespace GrandAStudio.Sportia
         {
             base.OnNavigatedTo(e);
 
-            checkButtonState(btnCAt00, txtCAt00, 1, btnCAt00_Tap);
+            checkButtonState(btnCAt00, txtCAt00, 2, btnCAt00_Tap);
 
-            checkButtonState(btnCAt90, txtCAt90, 3, btnCAt90_Tap);
+            checkButtonState(btnCAt90, txtCAt90, 4, btnCAt90_Tap);
 
-            checkButtonState(btnCAt80, txtCAt80, 2, btnCAt80_Tap);
+            checkButtonState(btnCAt80, txtCAt80, 9, btnCAt80_Tap);
 
-            checkButtonState(btnCAtQT, txtCAtQT, 4, btnCAtQT_Tap);
+            checkButtonState(btnCAtQT, txtCAtQT, 7, btnCAtQT_Tap);
 
-            checkButtonState(btnCAtStars, txtCAtStars, 9, btnCAtStars_Tap);
+            checkButtonState(btnCAtStars, txtCAtStars, 6, btnCAtStars_Tap);
 
             checkButtonState(btnCAtRan, txtCAtRan, 8, btnCAtRan_Tap);
 
-            checkButtonState(btnCAtRoles, txtCAtRoles, 5, btnCAtRoles_Tap);
+            checkButtonState(btnCAtRoles, txtCAtRoles, 1, btnCAtRoles_Tap);
 
-            checkButtonState(btnCAtOscars, txtCAtOscars, 7, btnCAtOscars_Tap);
+            checkButtonState(btnCAtOscars, txtCAtOscars, 3, btnCAtOscars_Tap);
 
-            checkButtonState(btnCAtDirectors, txtCAtDirectors, 10, btnCAtDirectors_Tap);
+            checkButtonState(btnCAtDirectors, txtCAtDirectors, 11, btnCAtDirectors_Tap);
 
-            checkButtonState(btnCAtAC, txtCAtAC, 11, btnCAtAC_Tap);
+            checkButtonState(btnCAtAC, txtCAtAC, 12, btnCAtAC_Tap);
 
-            checkButtonState(btnCAtHS, txtCAtHS, 12, btnCAtHS_Tap);
+            checkButtonState(btnCAtHS, txtCAtHS, 10, btnCAtHS_Tap);
 
-            checkButtonState(btnCAtAdvanced, txtCAtAdvanced, 13, btnCAtAdvanced_Tap);
+            checkButtonState(btnCAtAdvanced, txtCAtAdvanced, 5, btnCAtAdvanced_Tap);
 
-            checkButtonState(btnCAtOldies, txtCAtOldies, 6, btnCAtOldies_Tap);
+            checkButtonState(btnCAtOldies, txtCAtOldies, 13, btnCAtOldies_Tap);
 
         }
 
@@ -79,7 +79,7 @@ namespace GrandAStudio.Sportia
 
         private void btnCAt00_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(1);      
+            StartGame(2);      
 
         }
 
@@ -91,22 +91,22 @@ namespace GrandAStudio.Sportia
 
         private void btnCAt90_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(3);  
+            StartGame(4);  
         }
 
         private void btnCAt80_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(2);  
+            StartGame(9);  
         }
 
         private void btnCAtQT_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(4);  
+            StartGame(7);  
         }
 
         private void btnCAtStars_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(9);  
+            StartGame(6);  
         }
 
         private void btnCAtRan_Tap(object sender, GestureEventArgs e)
@@ -116,39 +116,39 @@ namespace GrandAStudio.Sportia
 
         private void btnCAtRoles_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(5);  
+            StartGame(1);  
         }
 
         private void btnCAtOscars_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(7);  
+            StartGame(3);  
         }
 
         private void btnCAtDirectors_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(10);  
+            StartGame(11);  
         }
 
         private void btnCAtAC_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(11);  
+            StartGame(12);  
         }
 
         private void btnCAtHS_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(12);  
+            StartGame(10);  
         }
 
         private void btnCAtAdvanced_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(13);  
+            StartGame(5);  
         }
 
        
 
         private void btnCAtOldies_Tap(object sender, GestureEventArgs e)
         {
-            StartGame(6);  
+            StartGame(13);  
         }
 
        

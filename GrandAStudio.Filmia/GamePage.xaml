@@ -96,7 +96,7 @@
         
         <TextBlock Text="{Binding CurrentScore}" Name="txtScore" TextWrapping="Wrap" Margin="20,15,0,18" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FF030000" Width="64" HorizontalAlignment="Left" FontWeight="Bold" FontSize="30" TextAlignment="Center" />
         <TextBlock Text="{Binding Timer}" Name="txtTimeLeft" TextWrapping="Wrap" Grid.Row="1" Margin="20,0,0,46" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FF030000" Height="40" Width="64" HorizontalAlignment="Left" TextAlignment="Center" FontSize="30" FontWeight="Bold" />
-        <Image Height="160"  HorizontalAlignment="Left" Name="imgResultState" Stretch="Uniform" Source="test" Width="160"    Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="imgResultState" Stretch="Uniform" Source="test" Width="167"    Grid.Column="1" Grid.RowSpan="2" Margin="0,2,0,0" />
 
         <MediaElement x:Name="gamePlayer" AutoPlay="True" Visibility="Collapsed" MediaOpened="gamePlayer_MediaOpened" MediaEnded="SoundPlayer_MediaEnded" />
 
@@ -114,7 +114,7 @@
             </ListBox>
         </StackPanel>
 
-        <Image Grid.Column="1" Grid.Row="4" Name="imgSkip" Source=" Images\skip.png"  Tap="imgSkip_Tap" Height="50" Width="72"  Margin="236,0,0,-4" />
+        <Image Grid.Column="1" Grid.Row="2" Name="imgSkip" Source=" Images\skip.png"  Tap="imgSkip_Tap" Height="50" Width="72"  Margin="234,579,2,6" Grid.RowSpan="2" />
         <!--</Canvas>-->
     </Grid>
    

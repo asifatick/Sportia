@@ -24,24 +24,24 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <Image Margin="12,10,18,0" Source="/GrandAStudio.Sportia;component/Images/main%20screen%20stats%20title.png" Stretch="Fill" Width="450" />
+        <Image Margin="12,10,18,0" Source="/GrandAStudio.Sportia;component/Images/STATS.png" Stretch="Fill" Width="450" />
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="60,89,0,0" Name="lblTotal" Text="Total Points : " VerticalAlignment="Top" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="62,302,0,0" Name="lblWrongAnswer" Text="Total Wrong Answers : " VerticalAlignment="Top" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="62,247,0,0" Name="lblRAnswer" Text="Total Correct Answers : " VerticalAlignment="Top" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="60,141,0,0" Name="textBlock1" Text="Total Session Played : " VerticalAlignment="Top" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="62,354,0,0" Name="textBlock3" Text="Total Passes : " VerticalAlignment="Top" FontSize="24" />
-            <TextBlock FontSize="24" Foreground="White" Height="32" HorizontalAlignment="Right" Margin="0,195,102,0" Name="textBlock2" Text="Total Questions Answered : " VerticalAlignment="Top" TextAlignment="Left" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="60,89,0,0" Name="lblTotal" Text="Total Points : " VerticalAlignment="Top" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="62,302,0,0" Name="lblWrongAnswer" Text="Total Wrong Answers : " VerticalAlignment="Top" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="62,247,0,0" Name="lblRAnswer" Text="Total Correct Answers : " VerticalAlignment="Top" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="60,141,0,0" Name="textBlock1" Text="Total Session Played : " VerticalAlignment="Top" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="62,354,0,0" Name="textBlock3" Text="Total Passes : " VerticalAlignment="Top" FontSize="24" />
+            <TextBlock FontSize="24" Foreground="Black" Height="32" HorizontalAlignment="Right" Margin="0,195,102,0" Name="textBlock2" Text="Total Questions Answered : " VerticalAlignment="Top" TextAlignment="Left" />
 
 
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="206,89,0,506" Name="txtTotal" Text="{Binding Path=GScore.Total}" Width="57" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="315,302,0,0" Name="txtWA" Text="{Binding Path=GScore.TotlaWrongAnswers}" VerticalAlignment="Top" Width="57" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="315,247,0,0" Name="txtCA" Text="{Binding Path=GScore.TotalRightAnswers}" VerticalAlignment="Top" Width="57" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="297,141,0,0" Name="txtTG" Text="{Binding Path=GScore.TotalGames}" VerticalAlignment="Top" Width="57" FontSize="24" />
-            <TextBlock Foreground="White" Height="32" HorizontalAlignment="Left" Margin="212,354,0,0" Name="txtPasses" Text="{Binding Path=GScore.TotalPasses}" VerticalAlignment="Top" Width="57" FontSize="24" />
-            <TextBlock FontSize="24" Foreground="White" Height="32" HorizontalAlignment="Left" Margin="360,195,0,0" Name="txtTQ" Text="{Binding Path=GScore.TotalQuestions}" VerticalAlignment="Top" Width="57" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="206,89,0,506" Name="txtTotal" Text="{Binding Path=GScore.Total}" Width="57" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="315,302,0,0" Name="txtWA" Text="{Binding Path=GScore.TotlaWrongAnswers}" VerticalAlignment="Top" Width="57" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="315,247,0,0" Name="txtCA" Text="{Binding Path=GScore.TotalRightAnswers}" VerticalAlignment="Top" Width="57" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="297,141,0,0" Name="txtTG" Text="{Binding Path=GScore.TotalGames}" VerticalAlignment="Top" Width="57" FontSize="24" />
+            <TextBlock Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="212,354,0,0" Name="txtPasses" Text="{Binding Path=GScore.TotalPasses}" VerticalAlignment="Top" Width="57" FontSize="24" />
+            <TextBlock FontSize="24" Foreground="Black" Height="32" HorizontalAlignment="Left" Margin="360,195,0,0" Name="txtTQ" Text="{Binding Path=GScore.TotalQuestions}" VerticalAlignment="Top" Width="57" />
         </Grid>
     </Grid>
  

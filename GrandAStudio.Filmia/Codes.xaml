@@ -28,11 +28,10 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="0" Margin="12,0,12,0" Loaded="ContentPanel_Loaded">
-            <Image Height="96" Source="Images\lockfinal.png" HorizontalAlignment="Left" Margin="187,24,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="95" />
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,159,0,0"
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="-4,159,0,0"
                      Name="txtCode"  VerticalAlignment="Top" 
                      Width="460" TextAlignment="Center"
-                     Text="{Binding CodeEntered, Mode=TwoWay}"  KeyUp="txtCode_KeyUp" />
+                     Text="{Binding CodeEntered, Mode=TwoWay}"  KeyUp="txtCode_KeyUp" Background="#A65DBDDB" />
             <Image Source="Images\messagestripbg.png" Height="200"
                    HorizontalAlignment="Left" Margin="0,378,0,0" 
                    Name="imgMsgStrip" Stretch="Fill" VerticalAlignment="Top" 
@@ -40,8 +39,9 @@
             <TextBlock Height="116" HorizontalAlignment="Left" 
                        Margin="31,420,0,42" Name="lblMsg" 
                         VerticalAlignment="Center" 
-                       Width="395" TextAlignment="Center" Visibility="Collapsed" />
+                       Width="395" TextAlignment="Center" Visibility="Collapsed" Foreground="Black" />
             <TextBox Height="72" HorizontalAlignment="Left" Margin="20,339,0,0" Name="txtFake" Text="TextBox" VerticalAlignment="Top" Width="0" Visibility="Visible" />
+            <TextBlock Height="91" HorizontalAlignment="Center" Margin="36,48,22,0" Name="textBlock1" Text="Enter Code" VerticalAlignment="Top" Width="398" Foreground="#FF9C3330" FontStretch="SemiCondensed" FontSize="64" FontFamily="Verdana" FontWeight="ExtraBold" />
         </Grid>
     </Grid>
  

@@ -48,26 +48,26 @@
                     <ImageBrush ImageSource="/GrandAStudio.Sportia;component/Images/STATS.png" />
                 </Button.Background>
             </Button>-->
-            <HyperlinkButton NavigateUri="Http://www.facebook.com/Ganda.Studios" TargetName="_blank"   Height="72" Margin="0,152,361,0" Name="btnFacebook" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnFacebook_Click" Grid.Row="1">
+            <HyperlinkButton NavigateUri="Http://www.facebook.com/Ganda.Studios" TargetName="_blank"   Height="72" Margin="16,152,374,0" Name="btnFacebook" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnFacebook_Click" Grid.Row="1">
                 <HyperlinkButton.Background>
                     <ImageBrush ImageSource="/GrandAStudio.Sportia;component/Images/FaceBook_128x128.png" />
                 </HyperlinkButton.Background>
             </HyperlinkButton>
-            <HyperlinkButton NavigateUri="Http://twitter.com/Ganda_Studios" TargetName="_blank"   Height="72" HorizontalAlignment="Right" Margin="0,152,266,0" Name="btnTwitter" VerticalAlignment="Top" Width="84" BorderBrush="{x:Null}" Click="btnTwitter_Click" Grid.Row="1">
+            <HyperlinkButton NavigateUri="Http://twitter.com/Ganda_Studios" TargetName="_blank"   Height="68" HorizontalAlignment="Right" Margin="0,152,301,0" Name="btnTwitter" VerticalAlignment="Top" Width="84" BorderBrush="{x:Null}" Click="btnTwitter_Click" Grid.Row="1">
                 <HyperlinkButton.Background>
                     <ImageBrush ImageSource="/GrandAStudio.Sportia;component/Images/twitter_newbird_blue2.png" Stretch="UniformToFill" />
                 </HyperlinkButton.Background>
             </HyperlinkButton>
-            <Image Height="200" HorizontalAlignment="Left" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="480" Source="/GrandAStudio.Sportia;component/Images/Sportia.png" />
+            <Image Height="154" HorizontalAlignment="Left" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="449" Source="/GrandAStudio.Sportia;component/Images/filmia.png" Margin="16,63,0,0" />
 
-            <Image Height="130" HorizontalAlignment="Left" Margin="233,240,0,0" Name="btnPlay" Stretch="Fill" VerticalAlignment="Top" Width="240"  
+            <Image Height="72" HorizontalAlignment="Left" Margin="148,318,0,0" Name="btnPlay" Stretch="Fill" VerticalAlignment="Top" Width="170"  
                    Source="Images\PLAY.png"
                    Tap="btnPlay_Click" 
                     />
-            <Image Height="130" HorizontalAlignment="Left" Margin="226,0,0,33" Name="btnOpt" Stretch="Fill" VerticalAlignment="Bottom" Width="240"  
+            <Image Height="70" HorizontalAlignment="Left" Margin="126,0,0,48" Name="btnOpt" Stretch="Fill" VerticalAlignment="Bottom" Width="220"  
                    Source="Images\OPTIONS.png"
                    Tap="btnOption_Click" />
-            <Image Height="130" HorizontalAlignment="Left" Margin="226,502,0,0" Name="btnStats" Stretch="Fill" VerticalAlignment="Top" Width="240"  
+            <Image Height="69" HorizontalAlignment="Left" Margin="144,513,0,0" Name="btnStats" Stretch="Fill" VerticalAlignment="Top" Width="174"  
                    Source="Images\STATS.png"
                    Tap="btnStats_Click" Grid.RowSpan="2" />
         </Grid>

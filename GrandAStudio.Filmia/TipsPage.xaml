@@ -22,8 +22,8 @@
 
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Height="101" HorizontalAlignment="Left" Margin="35,602,0,0" Name="textBlock1" Text="Loading....." VerticalAlignment="Top" Width="326" FontSize="40" FontWeight="Bold" />
-        <TextBlock Height="553" HorizontalAlignment="Left" Margin="35,51,0,0" Name="textBlock2"  Text="{Binding Text}" VerticalAlignment="Top" Width="391" FontSize="30" TextWrapping="Wrap" />
+        <TextBlock Height="101" HorizontalAlignment="Left" Margin="35,602,0,0" Name="textBlock1" Text="Loading....." VerticalAlignment="Top" Width="326" FontSize="40" FontWeight="Bold" Foreground="Black" />
+        <TextBlock Height="553" HorizontalAlignment="Left" Margin="35,51,0,0" Name="textBlock2"  Text="{Binding Text}" VerticalAlignment="Top" Width="391" FontSize="30" TextWrapping="Wrap" Foreground="Black" />
     </Grid>
 
     <!--TitlePanel contains the name of the application and page title-->

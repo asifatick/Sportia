@@ -76,18 +76,8 @@ namespace GrandAStudio.Sportia
         }
         public void resumebackgroundSound()
         {
-            
-            MediaElement player = null; // get the media element from App resources
-            if (App.Current.Resources.Contains("bgPlayer"))
-            {
-                player = App.Current.Resources["bgPlayer"] as MediaElement;
-            }
-            if (player != null)
-            {
-                player.Source = (new Uri("/sounds/" + _CurrentBGSound, UriKind.Relative));
-                IsBgSoundPlaying = true;
 
-            }
+            SetCurrentBackGroundSound(_CurrentBGSound, "1");
 
         }
         public SoundState CurrentSoundState
@@ -156,7 +146,7 @@ namespace GrandAStudio.Sportia
                     {
                         if (!confirmed)
                         {
-                            if (MessageBox.Show("Do you Like to stop Game sounds", "Sportia", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
+                            if (MessageBox.Show("Do you want to play Game Sounds?", "Sportia", MessageBoxButton.OKCancel) == MessageBoxResult.Cancel)
                             {
                                 StopbackgroundSound();
                                 App.ViewModel.IsSoundsOn = false;

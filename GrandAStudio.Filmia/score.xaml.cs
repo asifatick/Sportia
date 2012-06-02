@@ -25,7 +25,7 @@ namespace GrandAStudio.Sportia
         {
             NavigationService.RemoveBackEntry();
             App.ViewModel.GScore.TotalGames += 1;
-            App.ViewModel.GScore.TotalQuestions += 15;
+            App.ViewModel.GScore.TotalQuestions += 12;
             App.ViewModel.GScore.TotalPasses += App.ViewModel.GamePasses;
             App.ViewModel.GScore.TotalRightAnswers += App.ViewModel.GameRightAnswer;
             App.ViewModel.GScore.TotlaWrongAnswers += App.ViewModel.GameWrongAnswer;
@@ -51,8 +51,11 @@ namespace GrandAStudio.Sportia
         {
             App.CurrentApp.SetCurrentBackGroundSound("menu.mp3", "1");
             //NavigationService.
-            
-            NavigationService.Navigate(new Uri(@"/MenuPage.xaml", UriKind.Relative));
+
+            if (!NavigationService.CanGoBack)
+            {
+                NavigationService.Navigate(new Uri(@"/MenuPage.xaml", UriKind.Relative));
+            }
         }
     }
 }
