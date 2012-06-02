@@ -101,7 +101,7 @@ namespace GrandAStudio.Sportia {
                 return;
             }
             _contentLoaded = true;
-            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Filmia;component/Categories.xaml", System.UriKind.Relative));
+            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Sportia;component/Categories.xaml", System.UriKind.Relative));
             this.LayoutRoot = ((System.Windows.Controls.Grid)(this.FindName("LayoutRoot")));
             this.btnCAt00 = ((System.Windows.Controls.Image)(this.FindName("btnCAt00")));
             this.txtCAt00 = ((System.Windows.Controls.TextBlock)(this.FindName("txtCAt00")));

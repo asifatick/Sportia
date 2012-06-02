@@ -20,7 +20,7 @@
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>Sportia.xap</XapFilename>
+    <XapFilename>SPORTvia.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>GrandAStudio.Sportia.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>

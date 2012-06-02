@@ -63,7 +63,7 @@ namespace GrandAStudio.Sportia {
                 return;
             }
             _contentLoaded = true;
-            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Filmia;component/GamePage.xaml", System.UriKind.Relative));
+            System.Windows.Application.LoadComponent(this, new System.Uri("/GrandAStudio.Sportia;component/GamePage.xaml", System.UriKind.Relative));
             this.LayoutRoot = ((System.Windows.Controls.Grid)(this.FindName("LayoutRoot")));
             this.txtScore = ((System.Windows.Controls.TextBlock)(this.FindName("txtScore")));
             this.txtTimeLeft = ((System.Windows.Controls.TextBlock)(this.FindName("txtTimeLeft")));

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{1190ACE7-C01C-4E62-AF4B-5C4165BF1735}" Title="Sportia" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="GrandAStudio.Sportia author" Description="Sample description" Publisher="GrandAStudio.Sportia">
+  <App xmlns="" ProductID="{1190ACE7-C01C-4E62-AF4B-5C4165BF1735}" Title="SPORTvia" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="GrandAStudio.Sportia author" Description="Sample description" Publisher="GrandAStudio.Sportia">
     <IconPath IsRelative="true" IsResource="false">icons\62.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />
@@ -20,16 +20,14 @@
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
-      <ExtendedTask Name="BackgroundTask">
-        
-      </ExtendedTask>
+      <ExtendedTask Name="BackgroundTask"></ExtendedTask>
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="GrandAStudio.SportiaToken" TaskName="_default">
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">icons\173.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>Sportia</Title>
+          <Title>SPORTvia</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>
