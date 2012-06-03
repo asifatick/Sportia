@@ -119,7 +119,7 @@ namespace GrandAStudio.Sportia
         private void unlockCategory(int p)
         {
             dbc.Categories.Where(c => c.IID == (long)p).FirstOrDefault().IsUnlocked = 1;
-            lblMsg.Text = "You have unlocked a secret caregory.";
+            lblMsg.Text = "You have unlocked a secret category.";
            dbc.SubmitChanges();
         }
 

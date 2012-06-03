@@ -36,10 +36,10 @@
                    HorizontalAlignment="Left" Margin="0,378,0,0" 
                    Name="imgMsgStrip" Stretch="Fill" VerticalAlignment="Top" 
                    Width="460" Visibility="Collapsed"/>
-            <TextBlock Height="116" HorizontalAlignment="Left" 
+            <TextBlock TextWrapping="Wrap" Height="116" HorizontalAlignment="Left" 
                        Margin="31,420,0,42" Name="lblMsg" 
                         VerticalAlignment="Center" 
-                       Width="395" TextAlignment="Center" Visibility="Collapsed" Foreground="Black" />
+                       Width="395" TextAlignment="Center" Visibility="Collapsed" Foreground="Black" FontWeight="Bold" FontSize="24" />
             <TextBox Height="72" HorizontalAlignment="Left" Margin="20,339,0,0" Name="txtFake" Text="TextBox" VerticalAlignment="Top" Width="0" Visibility="Visible" />
             <TextBlock Height="91" HorizontalAlignment="Center" Margin="36,48,22,0" Name="textBlock1" Text="Enter Code" VerticalAlignment="Top" Width="398" Foreground="#FF9C3330" FontStretch="SemiCondensed" FontSize="64" FontFamily="Verdana" FontWeight="ExtraBold" />
         </Grid>
